@@ -19,7 +19,7 @@ const App: React.FC = () => {
         <section className="my-10">
           <h2 className="text-2xl font-semibold text-center">About Me</h2>
           <div className="flex flex-col items-center md:flex-row md:items-center md:justify-center gap-5 mt-5 px-5">
-            <img src="/profile-photo.jpg" alt="My Photo" className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full object-cover" />
+            <img src="${process.env.PUBLIC_URL}/profile-photo.jpg" alt="My Photo" className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full object-cover" />
             <p className="text-lg text-center md:text-left max-w-2xl">
               Hi, I'm Paul! I'm a software engineer with a passion for game development and AI. After a career in the military which saw me working to protect the UK Airspace from threats, both domestic and international, and also in areas of conflict, I've rediscovered my love of both gaming and how engaging AI and gameplay content can truly make a rewarding and memorable experience.
               <br></br>
