@@ -1,0 +1,92 @@
+/* General Reset */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+  }
+  
+  /* Header */
+  .hero {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .hero .display-4 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  
+  .hero .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    background: #2575fc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hero .btn:hover {
+    background: #1b5cb8;
+  }
+  
+  /* Projects */
+  .projects {
+    padding: 50px 0;
+    background: #fff;
+  }
+  
+  .projects .section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    background: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Contact */
+  .contact {
+    background: #f4f4f4;
+    padding: 50px 0;
+  }
+  
+  .contact form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .contact form .form-control {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact form .btn-primary {
+    background: #6a11cb;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact form .btn-primary:hover {
+    background: #2575fc;
+  }
