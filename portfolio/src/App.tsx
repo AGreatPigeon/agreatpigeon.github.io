@@ -7,11 +7,6 @@ import './index.css';
 const App: React.FC = () => {
   return (
     <div className="bg-gradient-to-b from-black to-gray-900 text-gray-300">
-      {/* Header */}
-      <header className="p-5 bg-gradient-to-r from-indigo-800 to-blue-600 text-white">
-        <h1 className="text-3xl font-semibold text-center md:text-left">Hello!</h1>
-      </header>
-
       {/* Main Content */}
       <main className="p-6 space-y-10">
 
@@ -22,15 +17,15 @@ const App: React.FC = () => {
             <img src="/profile-photo.jpg" alt="My Photo" className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-lg" />
             <div className="text-base leading-relaxed text-center md:text-left max-w-3xl">
               <p>
-                Hi, I'm Paul! I'm a software engineer with a passion for game development and AI. After a career in the military which saw me working to protect the UK Airspace from threats, both domestic and international, and also in areas of conflict, I've rediscovered my love of both gaming and how engaging AI and gameplay content can truly make a rewarding and memorable experience.
+                Hi, I am Paul. A software engineer with a passion for game development and AI. After a career in the military which saw me working to protect the UK Airspace from threats, both domestic and international, and also in areas of conflict, I have rediscovered my love of both gaming and how engaging AI and gameplay content can truly make a rewarding and memorable experience.
               </p>
               <br/>
               <p>
-                I've worked on various projects, from automating REST API creation of new services in a Data Lake to AWS to enable developers to work on more engaging content, a full stack application to provide a batch dashboard for a data lake, providing trend analysis and early warning for SLA breaches, to engaging gameplay in Unreal Engine 5, utilising Generative AI to provide engaging AI for FPS combat.
+                I have worked on various projects, from automating REST API creation of new services in a Data Lake to AWS to enable developers to work on more engaging content, a full stack application to provide a batch dashboard for a data lake, providing trend analysis and early warning for SLA breaches, to engaging gameplay in Unreal Engine 5, utilising Generative AI to provide engaging AI for FPS combat.
               </p>
               <br/>
               <p>
-                I'm eager to apply my experience to create engaging and intelligent gameplay experiences.
+                I am extremely eager to apply my experience to create engaging and intelligent gameplay experiences.
               </p>
               <br/>
               <div className="flex justify-center md:justify-start space-x-4">
@@ -47,7 +42,7 @@ const App: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
             {[{
               title: "Gameplay AI System",
-              description: "Built adaptive NPC behavior using Unreal Engine and C++ with real-time debugging tools.",
+              description: "Built adaptive NPC behavior using Unreal Engine with real-time debugging tools.",
               link: "https://github.com/agreatpigeon/gameplay-ai-system"
             }, {
               title: "2048",
@@ -63,7 +58,7 @@ const App: React.FC = () => {
               link: "https://github.com/AGreatPigeon/bashshell"
             }, {
               title: "Scalable API Framework",
-              description: "High-performance REST API handling 1M+ requests daily with AWS Lambda and DynamoDB.",
+              description: "High performance REST API handling 1M+ requests daily with AWS Lambda and DynamoDB.",
               link: "https://github.com/agreatpigeon/scalable-api-framework"
             }].map((project, index) => (
               <div key={index} className="card bg-gray-800 p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow">

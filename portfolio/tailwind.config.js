@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'Arial', 'sans-serif'], // Replace with your chosen font
-      },
+        'ginto': ['"Ginto"', 'sans-serif'],
+      },  
       colors: {
         primary: '#1E3A8A', // Deep blue
         secondary: '#9333EA', // Purple
