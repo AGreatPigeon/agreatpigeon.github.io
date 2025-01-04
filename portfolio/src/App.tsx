@@ -6,9 +6,9 @@ import './index.css';
 
 const App: React.FC = () => {
   return (
-    <div className="bg-gradient-to-b from-background to-white text-gray-700">
+    <div className="bg-gradient-to-b from-black to-gray-900 text-gray-300">
       {/* Header */}
-      <header className="p-5 bg-gradient-to-r from-primary to-secondary text-white">
+      <header className="p-5 bg-gradient-to-r from-indigo-800 to-blue-600 text-white">
         <h1 className="text-3xl font-semibold text-center md:text-left">Hello!</h1>
       </header>
 
@@ -17,26 +17,33 @@ const App: React.FC = () => {
 
         {/* About Me Section */}
         <section className="">
-          <h2 className="text-2xl font-semibold text-center text-primary">About Me</h2>
+          <h2 className="text-2xl font-semibold text-center text-blue-400">About Me</h2>
           <div className="flex flex-col items-center md:flex-row md:items-center md:justify-center gap-8 mt-6 px-6">
-            <img src="/profile-photo.jpg" alt="My Photo" className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-md" />
-            <p className="text-base leading-relaxed text-center md:text-left max-w-3xl">
-              Hi, I'm Paul! I'm a software engineer with a passion for game development and AI. After a career in the military which saw me working to protect the UK Airspace from threats, both domestic and international, and also in areas of conflict, I've rediscovered my love of both gaming and how engaging AI and gameplay content can truly make a rewarding and memorable experience.
-              <br/><br/>
-              I've worked on various projects, from automating REST API creation of new services in a Data Lake to AWS to enable developers to work on more engaging content, a full stack application to provide a batch dashboard for a data lake, providing trend analysis and early warning for SLA breaches, to engaging gameplay in Unreal Engine 5, utilising Generative AI to provide engaging AI for FPS combat.
-              <br/><br/>
-              I'm eager to apply my experience to create engaging and intelligent gameplay experiences.
-            </p>
-            <div className="flex justify-center md:justify-start space-x-4">
-                <a href="https://github.com/agreatpigeon" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">GitHub</a>
-                <a href="https://linkedin.com/in/paul-f-burns" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">LinkedIn</a>
+            <img src="/profile-photo.jpg" alt="My Photo" className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-lg" />
+            <div className="text-base leading-relaxed text-center md:text-left max-w-3xl">
+              <p>
+                Hi, I'm Paul! I'm a software engineer with a passion for game development and AI. After a career in the military which saw me working to protect the UK Airspace from threats, both domestic and international, and also in areas of conflict, I've rediscovered my love of both gaming and how engaging AI and gameplay content can truly make a rewarding and memorable experience.
+              </p>
+              <br/>
+              <p>
+                I've worked on various projects, from automating REST API creation of new services in a Data Lake to AWS to enable developers to work on more engaging content, a full stack application to provide a batch dashboard for a data lake, providing trend analysis and early warning for SLA breaches, to engaging gameplay in Unreal Engine 5, utilising Generative AI to provide engaging AI for FPS combat.
+              </p>
+              <br/>
+              <p>
+                I'm eager to apply my experience to create engaging and intelligent gameplay experiences.
+              </p>
+              <br/>
+              <div className="flex justify-center md:justify-start space-x-4">
+                <a href="https://github.com/agreatpigeon" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">GitHub</a>
+                <a href="https://linkedin.com/in/agreatpigeon" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">LinkedIn</a>
               </div>
+            </div>
           </div>
         </section>
 
         {/* Projects Section */}
         <section className="">
-          <h2 className="text-2xl font-semibold text-center text-primary">Projects</h2>
+          <h2 className="text-2xl font-semibold text-center text-blue-400">Projects</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
             {[{
               title: "Gameplay AI System",
@@ -59,10 +66,10 @@ const App: React.FC = () => {
               description: "High-performance REST API handling 1M+ requests daily with AWS Lambda and DynamoDB.",
               link: "https://github.com/agreatpigeon/scalable-api-framework"
             }].map((project, index) => (
-              <div key={index} className="card bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h3 className="card-title text-lg font-semibold text-primary">{project.title}</h3>
-                <p className="card-text text-sm text-gray-600 mt-2">{project.description}</p>
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn btn-link text-accent mt-4 block">View on GitHub</a>
+              <div key={index} className="card bg-gray-800 p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <h3 className="card-title text-lg font-semibold text-blue-400">{project.title}</h3>
+                <p className="card-text text-sm text-gray-400 mt-2">{project.description}</p>
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn btn-link text-blue-400 mt-4 block">View on GitHub</a>
               </div>
             ))}
           </div>
@@ -70,12 +77,12 @@ const App: React.FC = () => {
 
         {/* Skills Section */}
         <section className="">
-          <h2 className="text-2xl font-semibold text-center text-primary">Skills</h2>
+          <h2 className="text-2xl font-semibold text-center text-blue-400">Skills</h2>
           <div className="flex flex-wrap justify-center gap-8 mt-6">
             {[{ Icon: FaJava, name: "Java" }, { Icon: FaPython, name: "Python" }, { Icon: FaCode, name: "C++" }, { Icon: SiSpringboot, name: "Spring Boot" }, { Icon: FaReact, name: "React" }, { Icon: SiUnrealengine, name: "Unreal Engine" }, { Icon: FaAws, name: "AWS" }, { Icon: SiMysql, name: "SQL" }, { Icon: SiApache, name: "Spark" }, { Icon: FaDocker, name: "Docker" }, { Icon: FaCogs, name: "Microservices" }, { Icon: SiJenkins, name: "Jenkins" }].map(({ Icon, name }) => (
               <div key={name} className="flex flex-col items-center space-y-2">
-                <Icon className="text-4xl text-accent" />
-                <p className="text-sm font-medium text-gray-700">{name}</p>
+                <Icon className="text-4xl text-blue-400" />
+                <p className="text-sm font-medium text-gray-300">{name}</p>
               </div>
             ))}
           </div>
@@ -83,12 +90,12 @@ const App: React.FC = () => {
 
         {/* Education Section */}
         <section className="">
-          <h2 className="text-2xl font-semibold text-center text-primary">Education</h2>
-          <div className="bg-white p-6 rounded-lg shadow-md mt-6">
-            <h3 className="text-lg font-semibold text-primary">MSc Advanced Computer Science with Big Data</h3>
-            <p className="text-base text-gray-600">University of Strathclyde, Glasgow — September 2012 - August 2018</p>
-            <p className="text-base text-gray-600 mt-4">Relevant Courses:</p>
-            <ul className="list-disc pl-6 text-sm text-gray-600">
+          <h2 className="text-2xl font-semibold text-center text-blue-400">Education</h2>
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md mt-6">
+            <h3 className="text-lg font-semibold text-blue-400">MSc Advanced Computer Science with Big Data</h3>
+            <p className="text-base text-gray-400">University of Strathclyde, Glasgow — September 2012 - August 2018</p>
+            <p className="text-base text-gray-400 mt-4">Relevant Courses:</p>
+            <ul className="list-disc pl-6 text-sm text-gray-400">
               <li>Advanced Algorithms</li>
               <li>AI</li>
               <li>Cloud Computing</li>
@@ -103,7 +110,7 @@ const App: React.FC = () => {
       </main>
 
       {/* Footer */}
-      <footer className="p-5 bg-gradient-to-r from-secondary to-primary text-white text-center">
+      <footer className="p-5 bg-gradient-to-r from-blue-600 to-indigo-800 text-white text-center">
         <p>Made with 💻 using React, TypeScript, and Tailwind CSS</p>
       </footer>
     </div>

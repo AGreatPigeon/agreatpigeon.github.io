@@ -6,15 +6,19 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Inter', 'Arial', 'sans-serif'], // Replace with your chosen font
       },
       colors: {
-        primary: '#4e5b70', // Soft blue-gray
-        secondary: '#8e9ba5', // Muted light gray-blue
-        accent: '#d1e0e7', // Light pastel blue
-        background: '#f7f9fc', // Very light grayish background
-        text: '#333333', // Dark gray for text (not pure black)
-      }
+        primary: '#1E3A8A', // Deep blue
+        secondary: '#9333EA', // Purple
+        accent: '#38BDF8', // Cyan
+        background: '#0F172A', // Deep navy
+        card: '#1E293B', // Slate
+        text: {
+          light: '#E5E7EB', // Light gray
+          muted: '#9CA3AF', // Muted gray
+        },
+      },
     },
   },
   plugins: [],
