@@ -30,7 +30,7 @@ const App: React.FC = () => {
               <br/>
               <div className="flex justify-center md:justify-start space-x-4">
                 <a href="https://github.com/agreatpigeon" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">GitHub</a>
-                <a href="https://linkedin.com/in/agreatpigeon" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">LinkedIn</a>
+                <a href="https://linkedin.com/in/paul-f-burns" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">LinkedIn</a>
               </div>
             </div>
           </div>
