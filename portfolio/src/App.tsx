@@ -41,9 +41,9 @@ const App: React.FC = () => {
           <h2 className="text-2xl font-semibold text-center text-blue-400">Projects</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
             {[{
-              title: "Gameplay AI System",
-              description: "Built adaptive NPC behavior using Unreal Engine with real-time debugging tools.",
-              link: "https://github.com/agreatpigeon/gameplay-ai-system"
+              title: "Multiplayer FPS with Performance Optimization",
+              description: "Developed a scalable multiplayer first-person shooter (FPS) game using Unreal Engine, focusing on delivering smooth gameplay in a client-server architecture. This project showcases advanced gameplay mechanics, real-time networking, and performance optimization techniques tailored for large-scale multiplayer environments.",
+              link: "https://github.com/agreatpigeon/UntitledFPS"
             }, {
               title: "2048",
               description: "Custom version of 2048 in Java, with GUI and custom AI solver developed to attempt to reach highest possible score.",
